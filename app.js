@@ -26,4 +26,12 @@ import feedbackroutes from "./routes/feedbackRoutes.js"
 app.use("/api/user",userRoutes);
 app.use("/api/event",eventRoutes);
 app.use("/api/feedback",feedbackroutes);
+
+app.get("/",function(req,res){
+    return res.status(200).json({
+        success:true,
+        message:"Working Fine",
+        time:Date.now()
+    })
+})
 export default app;
