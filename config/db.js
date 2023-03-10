@@ -1,8 +1,8 @@
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 dotenv.config();
-const MONGO_URL = process.env.MONGO_URL || "mongodb+srv://Akhil:20169361@cluster0.i3ssyql.mongodb.net/test"
-// console.log(MONGO_URL)
+const MONGO_URL = process.env.MONGO_URL || "mongodb+srv://Yajas:20169361@cluster0.bziu94p.mongodb.net/?retryWrites=true&w=majority"
+console.log(MONGO_URL)
 
 // Connect Database
 export const connectDB = mongoose.connect(MONGO_URL,{
